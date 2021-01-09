@@ -95,14 +95,23 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Content\Css\adminlte.min.css" />
-    <Content Include="Content\Css\all.min.css" />
-    <Content Include="Content\Css\OverlayScrollbars.min.css" />
+    <Content Include="Content\Css\AdminLTE.min.css" />
+    <Content Include="Content\Css\bootstrap.min.css" />
+    <Content Include="Content\Css\font-awesome.min.css" />
+    <Content Include="Content\Css\ionicons.min.css" />
+    <Content Include="Content\Css\_all-skins.min.css" />
+    <Content Include="Content\Fonts\fontawesome-webfont.svg" />
+    <Content Include="Content\Fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="Content\Fonts\ionicons.svg" />
     <Content Include="Content\script\adminlte.min.js" />
-    <Content Include="Content\script\bootstrap.bundle.min.js" />
+    <Content Include="Content\script\bootstrap.min.js" />
     <Content Include="Content\script\demo.js" />
+    <Content Include="Content\script\fastclick.js" />
     <Content Include="Content\script\jquery.min.js" />
-    <Content Include="Content\script\jquery.overlayScrollbars.min.js" />
+    <Content Include="Content\script\jquery.slimscroll.min.js" />
+    <Content Include="Content\Uploads\UserImages\CruptedImages\ProfilePic.jpeg" />
+    <Content Include="Content\Uploads\UserImages\OriginalImages\ProfilePic.jpeg" />
+    <Content Include="Content\Uploads\UserImages\XSmallImages\ProfilePic.jpeg" />
     <Content Include="Global.asax" />
     <Content Include="Web.config" />
   </ItemGroup>
@@ -119,10 +128,19 @@
     <Content Include="Views\web.config" />
     <Content Include="Areas\Admin\Views\web.config" />
     <Content Include="Areas\Admin\Views\Shared\_AdminLayoutPage.cshtml" />
-    <Content Include="Content\Fonts\summernote.eot" />
-    <Content Include="Content\Fonts\summernote.ttf" />
-    <Content Include="Content\Fonts\summernote.woff" />
-    <Content Include="Content\Fonts\summernote.woff2" />
+    <Content Include="Areas\Admin\Views\AppUser\Create.cshtml" />
+    <Content Include="Content\Fonts\ionicons.eot" />
+    <Content Include="Content\Fonts\ionicons.ttf" />
+    <Content Include="Content\Fonts\ionicons.woff" />
+    <Content Include="Content\Fonts\glyphicons-halflings-regular.eot" />
+    <Content Include="Content\Fonts\glyphicons-halflings-regular.ttf" />
+    <Content Include="Content\Fonts\glyphicons-halflings-regular.woff" />
+    <Content Include="Content\Fonts\glyphicons-halflings-regular.woff2" />
+    <Content Include="Content\Fonts\fontawesome-webfont.eot" />
+    <Content Include="Content\Fonts\fontawesome-webfont.ttf" />
+    <Content Include="Content\Fonts\fontawesome-webfont.woff" />
+    <Content Include="Content\Fonts\fontawesome-webfont.woff2" />
+    <Content Include="Content\Fonts\FontAwesome.otf" />
     <None Include="packages.config" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
@@ -134,7 +152,6 @@
   <ItemGroup>
     <Folder Include="App_Data\" />
     <Folder Include="Areas\Admin\Data\" />
-    <Folder Include="Areas\Admin\Views\AppUser\" />
     <Folder Include="Controllers\" />
     <Folder Include="Models\" />
   </ItemGroup>
@@ -146,6 +163,10 @@
     <ProjectReference Include="..\NewspaperSolution.EntityLayer\NewspaperSolution.EntityLayer.csproj">
       <Project>{50692d2c-f873-40d2-b301-547660c98673}</Project>
       <Name>NewspaperSolution.EntityLayer</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\NewspaperSolution.UtilityLayer\NewspaperSolution.UtilityLayer.csproj">
+      <Project>{19aaace0-3069-4273-a076-929f6a17b79c}</Project>
+      <Name>NewspaperSolution.UtilityLayer</Name>
     </ProjectReference>
   </ItemGroup>
   <PropertyGroup>

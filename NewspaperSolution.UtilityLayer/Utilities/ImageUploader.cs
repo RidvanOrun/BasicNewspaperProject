@@ -10,9 +10,9 @@ namespace NewspaperSolution.UtilityLayer.Utilities
 {
     public class ImageUploader
     {
-        public static string DefaultProfileImagePath = "/Content/Uploads/UserImages/OriginalImages/userlogo.jpg";
-        public static string DefaultXSmallProfileImagePath = "/Content/Uploads/UserImages/XSmallImages/userlogo.jpg";
-        public static string DefaultCruptedProfileImagePath = "/Content/Uploads/UserImages/CruptedImages/userlogo.jpg";
+        public static string DefaultProfileImagePath = "/Content/Uploads/UserImages/OriginalImages/ProfilePic.jpeg";
+        public static string DefaultXSmallProfileImagePath = "/Content/Uploads/UserImages/XSmallImages/ProfilePic.jpeg";
+        public static string DefaultCruptedProfileImagePath = "/Content/Uploads/UserImages/CruptedImages/ProfilePic.jpeg";
 
         public static string OriginalProfileImagePath = "~/Content/Uploads/UserImages/OriginalImages/";
 

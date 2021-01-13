@@ -1,6 +1,6 @@
-﻿
+﻿@model NewspaperSolution.UILayer.Areas.Admin.Data.DTO.AppUserDTO
 @{
-    ViewBag.Title = "Create";
+    ViewBag.Title = "Update";
     Layout = "~/Areas/Admin/Views/Shared/_AdminLayoutPage.cshtml";
 }
 
@@ -12,26 +12,28 @@
                     <h4 class="box-title">Create User</h4>
                 </div>
                 <div class="box-body">
-                    <form action="/Admin/AppUser/Create" method="post" role="form" enctype="multipart/form-data">
+                    <form action="/Admin/AppUser/Update" method="post" role="form" enctype="multipart/form-data">
+
+                        <input type="text" style="visibility:hidden" name="Id" value="@Model.Id" />
 
                         <div class="form-group">
                             <label>First Name</label>
-                            <input type="text" name="FirstName" class="form-control" placeholder="First Name" />
+                            <input type="text" name="FirstName" value="@Model.FirstName" class="form-control" placeholder="First Name" />
                         </div>
 
                         <div class="form-group">
                             <label>Last Name</label>
-                            <input type="text" name="LastName" class="form-control" placeholder="Last Name" />
+                            <input type="text" name="LastName" value="@Model.LastName" class="form-control" placeholder="Last Name" />
                         </div>
 
                         <div class="form-group">
                             <label>User Name</label>
-                            <input type="text" name="UserName" class="form-control" placeholder="User Name" />
+                            <input type="text" name="UserName" value="@Model.UserName" class="form-control" placeholder="User Name" />
                         </div>
 
                         <div class="form-group">
                             <label>Password</label>
-                            <input type="password" name="Password" class="form-control" placeholder="Password" />
+                            <input type="password" name="Password" value="@Model.Password" class="form-control" placeholder="Password" />
                         </div>
 
                         <div class="form-group">
@@ -46,12 +48,14 @@
 
                         <div class="form-group">
                             <label>Choose Your Profile Image</label>
-                            <input type="file" name="Image" class="form-control" />
+                            <input type="file" name="Image" value="@Model.XSmallUserImage" class="form-control" />
                         </div>
 
+
                         <div class="form-group" style="float:right">
-                            <button type="submit" class="btn btn-primary">Create</button>
+                            <button type="submit" class="btn btn-primary">Update</button>
                         </div>
+
 
                     </form>
                 </div>

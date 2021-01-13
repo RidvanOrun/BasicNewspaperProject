@@ -152,7 +152,15 @@
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="Areas\Admin\AdminAreaRegistration.cs" />
     <Compile Include="Areas\Admin\Controllers\AppUserController.cs" />
+    <Compile Include="Areas\Admin\Controllers\CategoryController.cs" />
     <Compile Include="Areas\Admin\Controllers\HomeController.cs" />
+    <Compile Include="Areas\Admin\Controllers\PostController.cs" />
+    <Compile Include="Areas\Admin\Data\DTO\AppUserDTO.cs" />
+    <Compile Include="Areas\Admin\Data\DTO\CategoryDTO.cs" />
+    <Compile Include="Areas\Admin\Data\DTO\PostDTO.cs" />
+    <Compile Include="Areas\Admin\Data\VMs\AddPostVM.cs" />
+    <Compile Include="Areas\Admin\Data\VMs\PostDetailsVM.cs" />
+    <Compile Include="Areas\Admin\Data\VMs\UpdatePostVM.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -177,6 +185,15 @@
     <Content Include="Content\fonts\ionicons.eot" />
     <Content Include="Content\fonts\ionicons.ttf" />
     <Content Include="Content\fonts\ionicons.woff" />
+    <Content Include="Areas\Admin\Views\AppUser\List.cshtml" />
+    <Content Include="Areas\Admin\Views\AppUser\Update.cshtml" />
+    <Content Include="Areas\Admin\Views\Category\Create.cshtml" />
+    <Content Include="Areas\Admin\Views\Category\List.cshtml" />
+    <Content Include="Areas\Admin\Views\Category\Update.cshtml" />
+    <Content Include="Areas\Admin\Views\Post\Create.cshtml" />
+    <Content Include="Areas\Admin\Views\Post\List.cshtml" />
+    <Content Include="Areas\Admin\Views\Post\Update.cshtml" />
+    <Content Include="Areas\Admin\Views\Post\Show.cshtml" />
     <None Include="packages.config" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
@@ -187,7 +204,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Areas\Admin\Data\" />
     <Folder Include="Controllers\" />
     <Folder Include="Models\" />
   </ItemGroup>
